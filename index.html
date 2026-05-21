@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Comercializadora KUESS</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Aplicar la nueva fuente a todo el documento */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800 flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+<nav class="bg-white/90 backdrop-blur-md text-zinc-900 sticky top-0 z-50 shadow-sm relative border-b border-zinc-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/logo 1.png" alt="Logo KUESS" class="h-16 md:h-20 w-auto">
+                </a>
+            </div>
+            
+            <!-- Menú Escritorio (Textos oscuros con hover azul) -->
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="index.html" class="text-sky-600 transition">Inicio</a>
+                <a href="productos.html" class="text-zinc-600 hover:text-sky-600 transition">Productos</a>
+                <a href="historia.html" class="text-zinc-600 hover:text-sky-600 transition">Nuestra Historia</a>
+                <a href="contacto.html" class="text-zinc-600 hover:text-sky-600 transition">Contacto</a>
+            </div>
+
+            <!-- Botón móvil (Oscuro) -->
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-800 hover:text-sky-600 focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil Desplegable (Claro) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white border-t border-zinc-200 shadow-xl transition-all">
+            <div class="flex flex-col px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-4 py-3 rounded-md text-base font-medium text-sky-600 bg-sky-50">Inicio</a>
+                <a href="productos.html" class="block px-4 py-3 rounded-md text-base font-medium text-zinc-700 hover:text-sky-600 hover:bg-zinc-50 transition">Productos</a>
+                <a href="historia.html" class="block px-4 py-3 rounded-md text-base font-medium text-zinc-700 hover:text-sky-600 hover:bg-zinc-50 transition">Nuestra Historia</a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-md text-base font-medium text-zinc-700 hover:text-sky-600 hover:bg-zinc-50 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="relative h-[80vh] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center overflow-hidden bg-zinc-950">
+        <!-- Imagen de fondo con overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/du5Fs2jgtPfvmmSDqeOFixiN5_eMMWPqqWTCJvvb4gPJqjQxDHQz2r8wGhNxofo1gSo8Qsik8PtfN9SuiAXh-_A6LKGJWQUnv04-J61s8hS0NhBEMc7971MsmNWOHGuFRRwRBh17Wh6VDXpxcJMcsjTVlOW_i7jXgwCEOewYR0NYlbN.webp" alt="Fondo Industrial" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/60 to-zinc-950/95"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl px-4 md:px-6 opacity-0 animate-fade-in mt-10 md:mt-0">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-4 leading-tight tracking-tight">
+                COMERCIALIZADORA <br> <span class="text-sky-400">KUESS</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-zinc-300 font-light mb-8 md:mb-10 opacity-0 animate-fade-in delay-200 px-2">
+                Soluciones integrales y suministro para la industria, construcción y comercio.
+            </p>
+            <div class="opacity-0 animate-fade-in delay-400">
+                <a href="contacto.html" class="inline-block bg-sky-500 hover:bg-sky-400 text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-bold uppercase tracking-widest transition shadow-[0_0_20px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.5)] transform hover:-translate-y-1 text-sm md:text-base">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN / SERVICIOS -->
+    <main class="flex-grow bg-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Encabezado de la sección -->
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-zinc-900 mb-3 tracking-tight">Nuestros Servicios</h2>
+                <h5 class="text-base md:text-lg text-zinc-500 font-medium px-4">Capacidad operativa y comercial para cualquier sector económico.</h5>
+                <div class="w-20 md:w-24 h-1 bg-sky-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Grid de 4 columnas (1 en móvil, 2 en tablet, 4 en PC) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                
+                <!-- Tarjeta 1 -->
+                <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl hover:bg-zinc-50 transition duration-300 shadow-sm border border-transparent hover:border-zinc-200">
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-sky-50 rounded-full flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 group-hover:bg-sky-100 transition duration-300">
+                        <i data-lucide="hard-hat" class="w-8 h-8 md:w-10 md:h-10 text-sky-500"></i>
+                    </div>
+                    <h4 class="text-lg md:text-xl font-bold text-zinc-900 mb-3">Construcción y Acero</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed">
+                        Suministro de perfiles de acero, barras corrugadas, herrajes y materiales para obras civiles.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl hover:bg-zinc-50 transition duration-300 shadow-sm border border-transparent hover:border-zinc-200">
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-sky-50 rounded-full flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 group-hover:bg-sky-100 transition duration-300">
+                        <i data-lucide="factory" class="w-8 h-8 md:w-10 md:h-10 text-sky-500"></i>
+                    </div>
+                    <h4 class="text-lg md:text-xl font-bold text-zinc-900 mb-3">Maquinaria Industrial</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed">
+                        Comercialización y arrendamiento de equipos, herramientas y partes para uso industrial.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl hover:bg-zinc-50 transition duration-300 shadow-sm border border-transparent hover:border-zinc-200">
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-sky-50 rounded-full flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 group-hover:bg-sky-100 transition duration-300">
+                        <i data-lucide="car-front" class="w-8 h-8 md:w-10 md:h-10 text-sky-500"></i>
+                    </div>
+                    <h4 class="text-lg md:text-xl font-bold text-zinc-900 mb-3">Sector Automotriz</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed">
+                        Venta y distribución de refacciones, neumáticos, accesorios y equipos vehiculares.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="group flex flex-col items-center text-center p-6 md:p-8 rounded-2xl hover:bg-zinc-50 transition duration-300 shadow-sm border border-transparent hover:border-zinc-200">
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-sky-50 rounded-full flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 group-hover:bg-sky-100 transition duration-300">
+                        <i data-lucide="shield-check" class="w-8 h-8 md:w-10 md:h-10 text-sky-500"></i>
+                    </div>
+                    <h4 class="text-lg md:text-xl font-bold text-zinc-900 mb-3">Seguridad y Tecnología</h4>
+                    <p class="text-sm text-zinc-600 leading-relaxed">
+                        Equipos contra incendio, prevención de accidentes, cómputo y mobiliario de oficina.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Botón final -->
+            <div class="mt-12 md:mt-16 text-center">
+                <a href="productos.html" class="inline-block bg-zinc-950 hover:bg-zinc-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold uppercase tracking-widest transition shadow-md text-sm md:text-base">
+                    Ver Catálogo Completo
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-100 text-zinc-600 py-10 md:py-12 mt-auto border-t border-zinc-200">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <div class="flex flex-col items-center md:items-start">
+                <div class="flex items-center gap-2 mb-3 text-zinc-900">
+                    <img src="assets/logo.png" alt="Logo KUESS" class="h-16 md:h-20 w-auto">
+                    <span class="font-black text-xl tracking-wider">KUESS</span>
+                </div>
+                <p class="text-xs text-zinc-500">&copy; 2026 Todos los derechos reservados.</p>
+            </div>
+            <div class="text-sm space-y-2 text-zinc-600">
+                <p>América Latina No. 420 Int. A-1</p>
+                <p>Col. Virreyes Residencial</p>
+                <p>Saltillo, Coahuila, CP 25230</p>
+            </div>
+            <div class="text-sm space-y-2 md:text-right font-medium text-zinc-700">
+                <p>Tel: <a href="https://wa.me/528445868876" class="hover:text-sky-600 transition">844-586-8876</a></p>
+                <p>Email: <a href="mailto:comercializadorakuess@outlook.com" class="hover:text-sky-600 transition break-all">comercializadorakuess@outlook.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar íconos Lucide
+        lucide.createIcons();
+
+        // Lógica para desplegar el menú móvil
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menuMovil = document.getElementById('mobile-menu');
+
+        btnMenu.addEventListener('click', () => {
+            menuMovil.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
