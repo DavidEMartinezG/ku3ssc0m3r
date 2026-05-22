@@ -29,6 +29,9 @@
         .delay-200 { animation-delay: 0.2s; }
         .delay-300 { animation-delay: 0.3s; }
         .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
     </style>
 </head>
 <body class="bg-zinc-50 text-zinc-800 flex flex-col min-h-screen">
@@ -69,11 +72,11 @@
 
     <!-- HEADER DE PÁGINA (FONDO NEGRO PREMIUM) -->
     <header class="bg-zinc-950 py-20 text-center border-b border-zinc-800 relative overflow-hidden">
-        <div class="max-w-3xl mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-5xl font-black text-white uppercase tracking-widest animate-fade-in">Nuestros Productos</h1>
             <div class="w-24 h-1 bg-sky-600 mx-auto my-6 rounded-full animate-fade-in delay-100"></div>
             <p class="text-zinc-400 text-base md:text-lg font-light leading-relaxed animate-fade-in delay-200">
-                Conoce nuestro catálogo especializado. Soluciones integrales diseñadas para superar las exigencias del sector industrial, construcción y automotriz.
+                Especialistas en la comercialización de <strong>Línea Blanca y Electrodomésticos</strong>. Además, contamos con un portafolio de soluciones integrales diseñadas para superar las exigencias del sector industrial, construcción, automotriz y tecnológico.
             </p>
         </div>
     </header>
@@ -82,76 +85,136 @@
     <main class="flex-grow py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 md:space-y-16">
 
-            <!-- PRODUCTO 1: Diagnóstico y Herramienta Automotriz -->
-            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-100">
+            <!-- PRODUCTO 1: LÍNEA BLANCA - REFRIGERACIÓN -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border-2 border-sky-100 opacity-0 animate-fade-in delay-100 relative">
+                <div class="absolute top-4 left-4 z-10 bg-sky-600 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full shadow-md">
+                    ⭐ Especialidad
+                </div>
+                <div class="w-full md:w-1/2 overflow-hidden bg-zinc-100">
+                    <img src="assets/refrigerador.jpg" alt="Refrigeradores y Congeladores" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
+                </div>
+                <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-xl sm:text-3xl font-black text-zinc-900 uppercase tracking-wide mb-3">Línea Blanca: Refrigeración</h2>
+                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Conserva tus alimentos y productos con nuestra gama de refrigeradores, congeladores y frigobares de última tecnología. Ofrecemos opciones elegantes para el hogar y soluciones de alta capacidad y rendimiento continuo para negocios.
+                    </p>
+                    <div>
+                        <a href="contacto.html" class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 px-5 py-2.5 rounded-full font-bold hover:bg-sky-100 hover:text-sky-600 transition text-sm sm:text-base">
+                            Solicitar Catálogo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2: LÍNEA BLANCA - LAVADO Y SECADO -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse group hover:shadow-md transition-shadow duration-300 border-2 border-sky-100 opacity-0 animate-fade-in delay-200">
+                <div class="w-full md:w-1/2 overflow-hidden bg-zinc-100">
+                    <img src="assets/lavadora.jpg" alt="Lavadoras y Secadoras" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
+                </div>
+                <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-xl sm:text-3xl font-black text-zinc-900 uppercase tracking-wide mb-3">Línea Blanca: Lavado y Secado</h2>
+                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Equipos eficientes para el cuidado integral de tus prendas. Contamos con lavadoras, secadoras y centros de lavado que combinan un ahorro superior de agua y energía con un rendimiento óptimo, adaptándose a cualquier espacio o necesidad.
+                    </p>
+                    <div>
+                        <a href="contacto.html" class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 px-5 py-2.5 rounded-full font-bold hover:bg-sky-100 hover:text-sky-600 transition text-sm sm:text-base">
+                            Solicitar Catálogo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 3: LÍNEA BLANCA - COCCIÓN Y CLIMATIZACIÓN -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border-2 border-sky-100 opacity-0 animate-fade-in delay-300">
+                <div class="w-full md:w-1/2 overflow-hidden bg-zinc-100">
+                    <img src="assets/aire_acondicionado.jpg" alt="Estufas y Climatización" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
+                </div>
+                <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                    <h2 class="text-xl sm:text-3xl font-black text-zinc-900 uppercase tracking-wide mb-3">Línea Blanca: Cocción y Climatización</h2>
+                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
+                        Transforma tu cocina y el ambiente de tus espacios. Distribuimos estufas, hornos, campanas, parrillas y sistemas de aire acondicionado tipo minisplit, asegurando confort, diseño moderno y una durabilidad garantizada.
+                    </p>
+                    <div>
+                        <a href="contacto.html" class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 px-5 py-2.5 rounded-full font-bold hover:bg-sky-100 hover:text-sky-600 transition text-sm sm:text-base">
+                            Solicitar Catálogo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 4: Soluciones Automotrices -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-400">
                 <div class="w-full md:w-1/2 overflow-hidden">
                     <img src="assets/autos.jpg" alt="Herramienta Automotriz" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
                 </div>
                 <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
                     <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Soluciones Automotrices</h2>
-                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <div class="w-12 h-1 bg-zinc-800 mb-6 rounded-full"></div>
                     <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
                         Suministro y comercialización de refacciones, neumáticos, accesorios y equipos para vehículos particulares, comerciales e industriales, ofreciendo soluciones integrales para mantenimiento, operación y rendimiento automotriz.
                     </p>
                     <div>
-                        <a href="contacto.html" class="inline-flex items-center gap-2 text-sky-600 font-bold hover:text-sky-500 transition text-sm sm:text-base">
+                        <a href="contacto.html" class="inline-flex items-center gap-2 text-zinc-800 font-bold hover:text-sky-600 transition text-sm sm:text-base">
                             Solicitar Cotización <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCTO 2: Redes e Infraestructura -->
-            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-200">
+            <!-- PRODUCTO 5: Infraestructura y Redes -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-500">
                 <div class="w-full md:w-1/2 overflow-hidden">
                     <img src="assets/redes.jpg" alt="Redes e Infraestructura" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
                 </div>
                 <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
                     <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Infraestructura y Redes</h2>
-                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <div class="w-12 h-1 bg-zinc-800 mb-6 rounded-full"></div>
                     <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
                         Soluciones completas en cableado estructurado UTP, canalización, racks y nodos de red para la correcta intercomunicación de oficinas y naves industriales. Proveemos los materiales necesarios para garantizar conectividad estable en entornos administrativos exigentes.
                     </p>
                     <div>
-                        <a href="contacto.html" class="inline-flex items-center gap-2 text-sky-600 font-bold hover:text-sky-500 transition text-sm sm:text-base">
+                        <a href="contacto.html" class="inline-flex items-center gap-2 text-zinc-800 font-bold hover:text-sky-600 transition text-sm sm:text-base">
                             Solicitar Cotización <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCTO 3: Industria y Construcción -->
-            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-300">
+            <!-- PRODUCTO 6: Industria y Construcción -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-600">
                 <div class="w-full md:w-1/2 overflow-hidden">
                     <img src="assets/materiales.jpg" alt="Industria y Construcción" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
                 </div>
                 <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
-                    <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Herramienta Industrial y Construcción</h2>
-                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Industria y Construcción</h2>
+                    <div class="w-12 h-1 bg-zinc-800 mb-6 rounded-full"></div>
                     <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
                         Suministro de material de alta resistencia, equipo de seguridad (EPP) y herramientas eléctricas o manuales diseñadas para soportar el uso rudo. Nuestro inventario está pensado para que los proyectos de obra y manufactura nunca se detengan por falta de insumos.
                     </p>
                     <div>
-                        <a href="contacto.html" class="inline-flex items-center gap-2 text-sky-600 font-bold hover:text-sky-500 transition text-sm sm:text-base">
+                        <a href="contacto.html" class="inline-flex items-center gap-2 text-zinc-800 font-bold hover:text-sky-600 transition text-sm sm:text-base">
                             Solicitar Cotización <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCTO 4: Soluciones Digitales -->
-            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row-reverse group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-400">
+            <!-- PRODUCTO 7: Soluciones Digitales -->
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow duration-300 border border-zinc-200 opacity-0 animate-fade-in delay-700">
                 <div class="w-full md:w-1/2 overflow-hidden">
                     <img src="assets/digital.jpg" alt="Soluciones Digitales" class="w-full h-64 sm:h-72 md:h-full object-cover group-hover:scale-103 transition-transform duration-500">
                 </div>
                 <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
-                    <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Desarrollo y Soluciones Digitales</h2>
-                    <div class="w-12 h-1 bg-sky-600 mb-6 rounded-full"></div>
+                    <h2 class="text-xl sm:text-2xl font-black text-zinc-900 uppercase tracking-wide mb-3">Soluciones Digitales</h2>
+                    <div class="w-12 h-1 bg-zinc-800 mb-6 rounded-full"></div>
                     <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
                         Más allá de lo físico, ofrecemos consultoría e implementación para la modernización de negocios. Desde sistemas de reportes diarios automatizados mediante correos electrónicos, hasta el diseño y maquetación web de interfaces enfocadas en la experiencia de sus clientes.
                     </p>
                     <div>
-                        <a href="contacto.html" class="inline-flex items-center gap-2 text-sky-600 font-bold hover:text-sky-500 transition text-sm sm:text-base">
+                        <a href="contacto.html" class="inline-flex items-center gap-2 text-zinc-800 font-bold hover:text-sky-600 transition text-sm sm:text-base">
                             Solicitar Cotización <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
                     </div>
